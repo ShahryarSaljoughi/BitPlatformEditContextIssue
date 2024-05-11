@@ -1,0 +1,25 @@
+﻿@page "/customers/add"
+<h3>AddCustomerPage</h3>
+
+<EditForm Model="customerInput">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <p>This is an EditForm</p>
+
+    <BitAccordion>
+        <BitDropdown 
+            Items="@(new List<BitDropdownItem<Gender>>()
+                   {
+                       new BitDropdownItem<Gender>() {Value = Gender.Male, Text = "مرد"},
+                       new BitDropdownItem<Gender>() {Value = Gender.Female, Text = "زن"},
+                       new BitDropdownItem<Gender>() {Value = Gender.Other, Text = "سایر"},
+                   })"
+            TValue="Gender"
+            TItem="BitDropdownItem<Gender>"
+        />
+    </BitAccordion>
+</EditForm>
+
+@code {
+
+}

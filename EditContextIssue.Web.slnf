@@ -1,0 +1,11 @@
+{
+  "solution": {
+    "path": "EditContextIssue.sln",
+    "projects": [
+      "src\\EditContextIssue.Server\\EditContextIssue.Server.csproj",
+      "src\\EditContextIssue.Shared\\EditContextIssue.Shared.csproj",
+      "src\\Client\\EditContextIssue.Client.Core\\EditContextIssue.Client.Core.csproj",
+      "src\\Client\\EditContextIssue.Client.Web\\EditContextIssue.Client.Web.csproj"
+    ]
+  }
+}
